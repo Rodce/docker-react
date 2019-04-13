@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Rodce/docker-react -f Dockerfile.dev .
+  - docker build -t rodce/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run Rodce/docker-react npm test -- --coverage
+  - docker run rodce/docker-react npm test -- --coverage
